@@ -1,0 +1,21 @@
+body {
+  background: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}

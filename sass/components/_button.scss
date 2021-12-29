@@ -1,0 +1,17 @@
+.main-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  border: none;
+  transition: background-color var(--transition-hover);
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}

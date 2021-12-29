@@ -1,0 +1,16 @@
+.address-link {
+  color: var(--white-color);
+  transition: color var(--transition-hover);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.contacts-link {
+  color: var(--footer-text-color);
+  transition: color var(--transition-hover);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}

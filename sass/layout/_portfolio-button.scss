@@ -1,0 +1,36 @@
+.button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+.button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--title-text-color);
+  background: var(--secondary-bcg-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: color var(--transition-hover),
+    background-color var(--transition-hover),
+    border-color var(--transition-hover), box-shadow var(--transition-hover);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--white-color);
+    background: var(--accent-color);
+    box-shadow: var(--portfolio-button-shadow);
+  }
+}
+
+.current-btn {
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: var(--portfolio-button-shadow);
+}

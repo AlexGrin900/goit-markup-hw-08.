@@ -1,0 +1,17 @@
+.text-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+.adventage-item {
+  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--secondary-bcg-color);
+}
+.title-text-section {
+  margin-bottom: 10px;
+}
