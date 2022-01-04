@@ -25,14 +25,21 @@
 
 .img-section {
   padding-top: 0;
+  padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .section-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
+  }
 }
 .job-list-item {
   margin-left: 30px;
