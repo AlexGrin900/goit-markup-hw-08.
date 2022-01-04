@@ -22,7 +22,9 @@
 }
 .title-text-section {
   padding-bottom: 10px;
-  text-align: center;
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
 }
 .job-section {
   padding: 45px 15px;
