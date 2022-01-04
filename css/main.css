@@ -80,6 +80,7 @@ body {
 
 .title {
   font-weight: 700;
+  line-height: 16.41px;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -94,10 +95,15 @@ body {
 }
 
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-margin));
   margin-left: calc(-1 * var(--card-set-margin));
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card-set > .card-set__card-item {
@@ -384,13 +390,13 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 15px;
+  text-align: center;
 }
 
 .team__title,
 .client-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .address-link {
@@ -627,16 +633,28 @@ body {
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-img.jpg);
   background-repeat: no-repeat;
-  padding: 118px 60px;
   text-align: center;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 }
 
+.hero .container {
+  padding: 118px 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero .container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero-img.jpg);
+  }
+  .hero .container {
+    width: 768px;
     padding: 118px 204px;
   }
 }
@@ -644,6 +662,9 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  }
+  .hero .container {
+    max-width: 1200px;
     padding: 200px 0;
   }
 }
@@ -675,21 +696,52 @@ body {
 .text-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .text-item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .adventage-item {
   margin-bottom: 30px;
   height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 4px;
   background-color: var(--secondary-bcg-color);
+  padding: 25px;
+  text-align: center;
 }
 
 .title-text-section {
   margin-bottom: 10px;
+}
+
+.job-section {
+  justify-content: center;
+}
+
+.job-section .container {
+  width: 480px;
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .job-section .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .job-section .container {
+    width: 1200px;
+  }
 }
 
 .job-container {
@@ -730,7 +782,7 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .job-list-item {
@@ -744,31 +796,40 @@ body {
 }
 
 .team__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team__info {
-  padding: 30px 32px 30px 32px;
+  padding: 30px 32px 24px 32px;
 }
 
 .team__name {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   color: var(--title-text-color);
 }
 
-.team__set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-margin));
-}
-
 .team__position {
+  font-size: 16px;
   margin-bottom: 16px;
 }
 
@@ -802,6 +863,10 @@ body {
 .team__social-icon {
   fill: currentColor;
   transition: color var(--transition-hover);
+}
+
+.team__title {
+  font-size: 28px;
 }
 
 .client-title {
