@@ -741,7 +741,12 @@ body {
 
 .title-text-section {
   padding-bottom: 10px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .title-text-section {
+    text-align: center;
+  }
 }
 
 .job-section {
@@ -926,12 +931,12 @@ body {
 
 .client-title {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .client__card-set {
   flex-wrap: wrap;
-  margin-bottom: -30px;
+  margin-top: -30px;
   display: flex;
   margin-left: calc(-1 * var(--card-set-margin));
 }
@@ -945,6 +950,14 @@ body {
 @media screen and (min-width: 768px) {
   .client-item {
     flex-basis: calc(100% / 3 - var(--card-set-margin));
+    margin-left: var(--card-set-margin);
+    margin-top: var(--card-set-margin);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item {
+    flex-basis: calc(100% / 6 - var(--card-set-margin));
     margin-left: var(--card-set-margin);
     margin-top: var(--card-set-margin);
   }
@@ -1122,5 +1135,16 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__card-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.section {
+  padding: 0 15px 94px 15px;
 }
 /*# sourceMappingURL=main.css.map */
