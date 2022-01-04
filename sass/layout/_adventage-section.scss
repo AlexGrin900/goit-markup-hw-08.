@@ -1,17 +1,39 @@
 .text-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+  // flex-basis: calc(100% / 4 - 30px);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 .adventage-item {
   margin-bottom: 30px;
   height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 4px;
   background-color: var(--secondary-bcg-color);
+  padding: 25px;
+  text-align: center;
 }
 .title-text-section {
   margin-bottom: 10px;
+}
+.job-section {
+  justify-content: center;
+  .container {
+    width: 480px;
+    padding: 60px 15px;
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  }
 }
