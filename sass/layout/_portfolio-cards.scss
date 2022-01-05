@@ -40,3 +40,27 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+.projects {
+}
+.portfolio__card-set {
+  margin-bottom: -30px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-margin));
+  }
+}
+.card-set__card-item {
+  margin-bottom: 30px;
+  @media screen and(min-width:768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+}
+.portfolio__section {
+  padding: 60px 15px;
+}
