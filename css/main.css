@@ -1137,14 +1137,37 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
+.portfolio__card-set {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio__card-set {
     display: flex;
     flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-margin));
   }
 }
 
-.section {
-  padding: 0 15px 94px 15px;
+.card-set__card-item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__card-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__card-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+}
+
+.portfolio__section {
+  padding: 60px 15px;
 }
 /*# sourceMappingURL=main.css.map */
