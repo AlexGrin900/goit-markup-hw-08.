@@ -64,14 +64,14 @@
     </header>
     <main> -->
     <!--hero-->
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="main-button hero-button" data-modal-open>
           Заказать услугу
         </button>
       </div>
-    </section> -->
+    </section>
     <!--How we make a job-->
     <section class="job-section">
       <div class="container">
@@ -176,12 +176,37 @@
 
           <ul class="list  team__set">
             <li class="team__item">
-              <img
-                class=""
-                src="./images/photo1.jpg"
-                width="100%"
-                alt="фото Игоря Демьяненко"
-              />
+            
+              <picture>
+                <source
+                  srcset="
+                    ../images/team-img/team-img1-descktop-x1.jpg 1x,
+                    ../images/team-img/team-img1-descktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ../images/team-img/team-img1-tablet-x1.jpg 1x,
+                    ../images/team-img/team-img1-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team-img/team-img1-mobile-x1.jpg 1x,
+                    ../images/team-img/team-img1-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img
+                  class=""
+                  src="../images/photo1.jpg"
+                  alt="фото Игоря Демьяненко"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -219,11 +244,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/photo2.jpg"
-                width="100%"
+              
+              <picture>
+                <source
+                  srcset="
+                    ../images/team-img/team-img2-descktop-x1.jpg 1x,
+                    ../images/team-img/team-img2-descktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ../images/team-img/team-img2-tablet-x1.jpg 1x,
+                    ../images/team-img/team-img2-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team-img/team-img2-mobile-x1.jpg 1x,
+                    ../images/team-img/team-img2-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+               <img
+                src="../images/photo2.jpg"
                 alt="фото Ольги Репиной"
               />
+              </picture>
+             
               <div class="team__info">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -261,11 +312,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/photo3.jpg"
-                width="100%"
+             <picture>
+                <source
+                  srcset="
+                    ../images/team-img/team-img3-descktop-x1.jpg 1x,
+                    ../images/team-img/team-img3-descktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ../images/team-img/team-img3-tablet-x1.jpg 1x,
+                    ../images/team-img/team-img3-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team-img/team-img3-mobile-x1.jpg 1x,
+                    ../images/team-img/team-img3-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img
+                src="../images/photo3.jpg"
                 alt="фото Николая Тарасова"
               />
+              </picture>
+              
               <div class="team__info">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -304,11 +380,35 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/photo4.jpg"
-                width="100%"
+              <picture>
+                <source
+                  srcset="
+                    ../images/team-img/team-img4-descktop-x1.jpg 1x,
+                    ../images/team-img/team-img4-descktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ../images/team-img/team-img4-tablet-x1.jpg 1x,
+                    ../images/team-img/team-img4-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team-img/team-img4-mobile-x1.jpg 1x,
+                    ../images/team-img/team-img4-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img
+                src="../images/photo4.jpg" 
                 alt="фото Михаила Ермакова"
               />
+              </picture>
               <div class="team__info">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
