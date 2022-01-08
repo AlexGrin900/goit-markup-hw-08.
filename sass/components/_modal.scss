@@ -3,10 +3,13 @@
   background: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
+  padding: 93px 15px 94px 15px;
   top: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
   transition: opacity var(--transition-hover),
     visibility var(--transition-hover);
   &.is-hidden {
@@ -21,17 +24,20 @@
 }
 
 .modal {
-  position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
-
+  // overflow-y: scroll;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: scale(1);
   transition: transform var(--transition-hover), opacity var(--transition-hover);
+  @media screen and(min-width:1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 /* modal-form */
 .button-close {
@@ -137,6 +143,10 @@
 }
 
 .checkbox-text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,4 +222,7 @@
 }
 .mail-form {
   display: flex;
+}
+.form-content {
+  padding-bottom: 30px;
 }
