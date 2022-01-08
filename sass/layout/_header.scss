@@ -122,8 +122,8 @@
   &:hover {
     color: var(--accent-color);
   }
-  &:focus .header-icon,
-  &:hover.header-icon {
+  &:focus.header-icon,
+  &:hover .header-icon {
     fill: var(--accent-color);
   }
 }
@@ -131,21 +131,23 @@
   @media screen and(min-width:768px) {
     display: none;
   }
-  margin-top: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
   border: none;
   background: none;
+  width: 100%;
   width: 40px;
-  justify-content: center;
-  text-align: center;
-}
-
-.open-menu-btn {
-  margin-left: auto;
+  height: 40px;
   &:focus .menu-icon,
   &:hover .menu-icon {
     fill: var(--accent-color);
   }
 }
+
 .close-menu-btn {
   display: block;
   justify-content: center;
@@ -193,6 +195,15 @@
     justify-content: space-between;
     height: 100%;
     margin: 0;
+  }
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 .menu-link {
