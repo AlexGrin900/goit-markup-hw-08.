@@ -1176,9 +1176,6 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .footer .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
   }
 }
@@ -1187,19 +1184,10 @@ body.modal-open {
   margin-bottom: 9px;
 }
 
-.footer-container {
-  align-items: baseline;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-container {
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer-item-list {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1229,13 +1217,14 @@ body.modal-open {
   text-align: center;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-item {
-    margin-bottom: 0;
     text-align: left;
   }
   .footer-item:not(:last-child) {
@@ -1267,7 +1256,19 @@ body.modal-open {
 }
 
 .mail-form {
-  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  .mail-form {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-form {
+    display: flex;
+  }
 }
 
 .button-subscription {
@@ -1285,14 +1286,6 @@ body.modal-open {
 
 .icon-form {
   margin-left: 10px;
-}
-
-.form-content {
-  padding-bottom: 30px;
-}
-
-.mail-form {
-  justify-content: center;
 }
 
 .input-field {
@@ -1317,6 +1310,12 @@ body.modal-open {
   transition: color var(--transition-hover);
 }
 
+@media screen and (min-width: 768px) {
+  .input-field {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .input-field {
     width: 358px;
@@ -1325,14 +1324,56 @@ body.modal-open {
   }
 }
 
-.mail-form-item {
-  padding-left: 37px;
+@media screen and (min-width: 1200px) {
+  .mail-form-item {
+    padding-left: 37px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-top-item {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-top-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-top-item {
+    margin-right: 70px;
+  }
 }
 
 .button-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-bottom-item {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .button-bottom-item {
+    margin-top: auto;
+  }
 }
 
 .button-item:not(:last-child) {
