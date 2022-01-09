@@ -4,9 +4,9 @@
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     .container {
-      width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px;
+      // width: 100px;
+      // padding-left: 15px;
+      // padding-right: 15px;
       margin: 0 auto;
     }
   }
@@ -16,16 +16,17 @@
   margin-bottom: 9px;
 }
 
-.footer-container {
-  align-items: baseline;
+// .footer-container {
+//   align-items: baseline;
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//   }
+// }
 .footer-item-list {
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 .footer-social-list {
@@ -50,12 +51,15 @@
 }
 .footer-item {
   text-align: center;
-  &:not(:last-child) {
-    margin-bottom: 60px;
+  @media screen and(max-width:1199px) {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and(min-width:768px) {
   }
   @media screen and(min-width:1200px) {
-    margin-bottom: 0;
-
     &:not(:last-child) {
       margin-right: 70px;
     }
@@ -90,8 +94,16 @@
     color: var(--white-color);
   }
 }
+
 .mail-form {
-  display: flex;
+  justify-content: center;
+
+  @media screen and(max-width:479px) {
+    padding: 0 15px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 .button-subscription {
   padding: 10px 29px;
@@ -106,14 +118,10 @@
   margin-left: 10px;
 }
 
-.form-content {
-  padding-bottom: 30px;
-}
-.mail-form {
-  //   display: flex;
+// .form-content {
+//   padding-bottom: 30px;
+// }
 
-  justify-content: center;
-}
 .input-field {
   padding: 15px;
   width: 100%;
@@ -133,6 +141,9 @@
     color: var(--footer-text-color);
     transition: color var(--transition-hover);
   }
+  @media screen and(min-width:768px) {
+    width: 450px;
+  }
   @media screen and(min-width:1200px) {
     width: 358px;
     margin-right: 12px;
@@ -140,5 +151,20 @@
   }
 }
 .mail-form-item {
-  padding-left: 37px;
+  @media screen and(min-width:1200px) {
+    padding-left: 37px;
+  }
+}
+.footer-top-item {
+  @media screen and(max-width:767px) {
+    padding-bottom: 60px;
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and(min-width:1200px) {
+    margin-right: 70px;
+  }
 }
