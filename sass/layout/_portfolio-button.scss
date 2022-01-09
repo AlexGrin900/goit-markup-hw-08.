@@ -9,11 +9,13 @@
   }
 }
 .button-bottom-item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 270px) {
     margin-top: 15px;
   }
-  @media screen and (max-width: 390px) {
-    margin-top: auto;
+}
+.middle-bottom-item {
+  @media screen and (max-width: 389px) and (min-width: 270px) {
+    margin-top: 15px;
   }
 }
 .button-item:not(:last-child) {
